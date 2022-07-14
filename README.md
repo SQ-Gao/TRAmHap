@@ -1,6 +1,6 @@
 # TRAmHap
 
-A novel deep-learning framework, termed **TRAmaHap**, that predict transcriptional activity using characteristics of DNA methylation haplotypes in proximal promoters and enhancers as far as 25 kb away from TSS.
+A novel deep-learning framework, termed **TRAmaHap**, that predicts transcriptional activity using characteristics of DNA methylation haplotypes in proximal promoters and enhancers as far as 25 kb away from TSS.
 
 ### Prerequisites
 
@@ -73,15 +73,16 @@ To demenstrate the usage of TRAmHap, we have provided a mouse heart datasets, wh
 ```shell
 #Trainning
 python3 ~/TRAmHap/RunModel/run_TRAmHap_Train.py -S ENCBS004ZLN \
--I ~/TRAmHap/TestDatasets/trainning/demo_data \
--O ~/TRAmHap/TestDatasets/trainning/file_fig \
--M ~/TRAmHap/demo_model -T 0
+-I train_data \
+-O file_fig \
+-M ~/TRAmHap/TestDatasets/trainning/demo_model \
+-T 0
 
 #Predicting
 python3 ~/TRAmHap/RunModel/run_TRAmHap_Predict.py \
--I ~/TRAmHap/TestDatasets/demo_testdata/x_ENCBS004ZLN.npy \
--O ~/TRAmHap/demo_file_fig \
--M ~/TRAmHap/demo_model/model_ENCBS004ZLN.pkl -T 0
+-I ~/TRAmHap/TestDatasets/demo_testdata/data/x_ENCBS004ZLN.npy \
+-O ~/TRAmHap/TestDatasets/demo_testdata/test_file_fig \
+-M ~/TRAmHap/TestDatasets/trainning/demo_model/model_ENCBS004ZLN.pkl -T 0
 ```
 
 The predicting output file is .csv file with 4 columns, including `index`,`P_H3K27ac`, `P_H3K4me3`, `P_log2(TPM+1)`.
