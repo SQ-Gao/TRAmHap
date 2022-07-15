@@ -115,7 +115,7 @@ We use ENCBS004ZLN sample as the test data set of the model, and we pooled all o
 ```shell
 #Training
 python3 ~/TRAmHap/RunModel/run_TRAmHap_Train.py -S ENCBS004ZLN \
--I train_data \
+-I ~/TRAmHap/TestDatasets/trainning/demo_traindata \
 -O file_fig \
 -M ~/TRAmHap/TestDatasets/trainning/demo_model \
 -T 0
