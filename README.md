@@ -95,7 +95,7 @@ For model training, all the training data should be preprocessed as `.npy` files
 
 For making predictions, the data should be preprocessed as .npy files. The prediction command has the following options:
 
-    	-S : (str) Naming the output results.
+        -S : (str) Naming the output results.
         -I : (str) Data path to be predict.
         -O : (str) Output Folder for saving result.
         -M : (str) Model parameters to be used.
