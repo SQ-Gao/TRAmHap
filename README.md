@@ -22,7 +22,7 @@ Python 3.8.8 or greater with the following packages:
 
 #### Datasets
 
-To demonstrate the usage of TRAmHap, we have provided a mouse heart dataset, which can be downloaded from [Test DataSets](https://github.com/SQ-Gao/TRAmHap/tree/main/TestDatasets).
+To demonstrate the usage of TRAmHap, we have provided a mouse heart dataset, which can be downloaded from [Test DataSets](https://github.com/SQ-Gao/TRAmHap/tree/main/TestData).
 It contains the following heart tissue samples:
 
 | Tissue | Name        | Description                              | GEO Accession |
